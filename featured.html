@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Work — Hanshu Patel</title>
+<meta name="description" content="Featured full stack projects by Hanshu Patel — ParkSync and Quantivyx AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sheet">
+
+  <div class="topbar">
+    <a class="avatar" href="index.html" aria-label="Home"><img src="images/profile.jpg" alt="" onerror="this.remove()">HP</a>
+    <nav class="navpill" aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="featured.html" class="active">Featured</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+    </nav>
+    <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+  </div>
+
+  <main>
+    <div class="inner-wide">
+      <div class="page-head reveal">
+        <h1>Flagship builds.</h1>
+        <p>The two projects that best show what I can do — full case studies of the systems, decisions, and results.</p>
+      </div>
+
+      <div class="fcard reveal" style="margin-bottom:26px">
+        <div class="shot"><img src="images/parksync-wide.jpg" alt="ParkSync screenshot" onerror="this.closest('.shot').remove()"></div>
+        <span class="k">Freelance · Full Stack</span>
+        <h3>ParkSync — Smart Parking Platform</h3>
+        <p>A smart parking platform where users search and filter lots, view real-time availability, reserve and pay for spots, and track their CO₂ impact.</p>
+        <ul>
+          <li>Responsive <strong>React + TypeScript</strong> front end with Google Maps geolocation and <strong>Three.js/WebXR</strong> 3D/AR parking layout visualization</li>
+          <li><strong>Node.js/Express</strong> back end with PostgreSQL + TypeORM; Redis caching cut <strong>API latency by 30%</strong> and improved session load speeds</li>
+          <li><strong>Stripe</strong> integration for secure payments and wallet credits; RESTful APIs with JWT-based authentication and role-based access control</li>
+          <li>Deployed in Docker containers with a <strong>GitHub Actions</strong> pipeline for automated testing and deployment</li>
+        </ul>
+        <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Stripe</span><span class="tag">Three.js</span><span class="tag">Docker</span></div>
+        <p style="margin-top:16px;margin-bottom:0"><a class="more" href="https://github.com/patelhanshu01/ParkSync" target="_blank" rel="noopener">View source on GitHub →</a></p>
+      </div>
+
+      <div class="fcard reveal" style="margin-bottom:70px">
+        <div class="shot"><img src="images/quantivyx-wide.jpg" alt="Quantivyx AI screenshot" onerror="this.closest('.shot').remove()"></div>
+        <span class="k">Freelance · Full Stack</span>
+        <h3>Quantivyx AI — Autonomous Wealth &amp; Portfolio Management</h3>
+        <p>An autonomous wealth management platform using predictive AI and market trend analysis to automate portfolio rebalancing and deliver real-time insights.</p>
+        <ul>
+          <li>AI analytics service in <strong>Python (FastAPI) + Scikit-learn</strong> forecasting stock market movements and analyzing user spending patterns</li>
+          <li>Transaction engine in <strong>Java (Spring Boot)</strong> executing automated trades with ACID-compliant ledgers for high-volatility scenarios</li>
+          <li>Administrative dashboard in <strong>C# (.NET Core)</strong> with dependency injection and Razor Pages for high-performance reporting</li>
+          <li>Event-driven <strong>WebSocket</strong> pipeline ingesting live market data into PostgreSQL time-series records for historical analysis</li>
+          <li>Polyglot microservices orchestrated with <strong>Docker + Kubernetes</strong>, communicating via REST and GraphQL; CI/CD via GitHub Actions</li>
+        </ul>
+        <div class="tags"><span class="tag">Spring Boot</span><span class="tag">FastAPI</span><span class="tag">.NET Core</span><span class="tag">React</span><span class="tag">Scikit-learn</span><span class="tag">Kubernetes</span><span class="tag">GraphQL</span><span class="tag">WebSockets</span></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <div class="links">
+        <a href="about.html">About</a>
+        <a href="featured.html">Featured</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+      </div>
+      <span class="c">© 2026 Hanshu Patel. All rights reserved.</span>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
